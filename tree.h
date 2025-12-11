@@ -1,7 +1,3 @@
-//
-// Created by Manju Muralidharan on 11/22/25.
-//
-
 #ifndef FA25EC3_TREE_H
 #define FA25EC3_TREE_H
 
@@ -38,7 +34,7 @@ public:
     vector<Node<U>*> children;
 
     // TODO: Write constructor
-    // Node(const string &nodeID, const U &value);
+    Node(const string &nodeID, const U &value);
 };
 
 template <typename T>
@@ -66,5 +62,7 @@ public:
     ~Tree();
     // TODO: Free all allocated memory
 };
+
+#include "tree.tpp"   // template implementation
 
 #endif //FA25EC3_TREE_H
